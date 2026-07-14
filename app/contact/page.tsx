@@ -26,11 +26,8 @@ export default function ContactPage() {
       <main className="flex-1 flex flex-col w-full pt-32 pb-16 md:pt-40 md:pb-24">
         <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
           
-          {/* Contact Links Grid */}
           <div className="glass-card p-6 md:p-12 order-1">
-            <h2 className="text-3xl font-bold mb-4 text-white">Get In Touch</h2>
-            <p className="text-[#A1A1AA] mb-8 text-sm md:text-base">Skip the slow contact forms. Reach out to us instantly on your preferred platform.</p>
-            
+            <h2 className="text-3xl font-bold mb-8 text-white">Get In Touch</h2>
             <div className="flex flex-col gap-4">
               {socials.map((social) => (
                 <a 
@@ -49,16 +46,17 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* About Section */}
           <div className="space-y-6 md:space-y-8 order-2 lg:pl-8">
-            <span className="text-[#82E838] font-bold tracking-wide uppercase text-sm border border-[#82E838]/30 px-3 py-1 rounded-full bg-[#82E838]/10">Who We Are</span>
-            <h1 className="text-4xl md:text-5xl font-bold font-heading">
-              About <span className="lowercase">growth master</span>
-            </h1>
+            <span className="text-[#82E838] font-bold tracking-wide uppercase text-sm border border-[#82E838]/30 px-3 py-1 rounded-full bg-[#82E838]/10">WHO WE ARE</span>
+            <h1 className="text-4xl md:text-5xl font-bold font-heading">About Growth master</h1>
+            
             <div className="text-[#A1A1AA] text-base md:text-lg leading-relaxed space-y-6">
-              <p>We saw businesses wasting thousands of dollars on beautiful websites that generated zero traffic, and SEO campaigns that promised the world but delivered nothing.</p>
-              <p>We built growth master to be different. We only focus on what matters: high-speed web development, risk-free local SEO, and authentic brand photography that converts.</p>
-              <p className="text-white font-medium border-l-2 border-[#82E838] pl-4">No forms to fill out. No automated ticketing systems. When you reach out to us, you speak directly to the experts building your business.</p>
+              <p>We work with small-to-medium scale businesses around Pune — CAs, spas, clinics etc. The kind of businesses where one new customer walking in or calling actually makes a real difference.</p>
+              <p>So we built Growth Master to help these businesses scale!</p>
+              
+              <div className="text-white font-medium border-l-4 border-[#82E838] pl-5 py-2 bg-white/5 rounded-r-lg">
+                When you message us, you're talking directly to the people actually building your website and running your SEO.
+              </div>
             </div>
           </div>
 
