@@ -1,79 +1,57 @@
 import Navbar from "@/components/layout/Navbar";
-import CTA from "@/components/sections/CTA";
 import Footer from "@/components/layout/Footer";
 
 export default function WhatWeDoPage() {
-  const steps = [
-    {
-      num: "01",
-      title: "Business Photography",
-      desc: "Before we write a single line of code, we capture the soul of your business. We shoot high-end, professional photos of your team, location, and products. Authenticity is what makes customers trust you.",
-      color: "text-[#F97316]",
-      bg: "bg-[#F97316]",
-      glow: "shadow-[0_0_30px_rgba(249,115,22,0.3)]",
-    },
-    {
-      num: "02",
-      title: "Making Your Website",
-      desc: "Using the stunning photos we just took, we design and build a lightning-fast website. We don't use templates. We custom-code a digital storefront that looks incredibly premium and is designed to turn visitors into buyers.",
-      color: "text-[#82E838]",
-      bg: "bg-[#82E838]",
-      glow: "shadow-[0_0_30px_rgba(130,232,56,0.3)]",
-    },
-    {
-      num: "03",
-      title: "Ranking & Getting Leads",
-      desc: "A beautiful website is useless if no one sees it. We apply powerful Local SEO strategies to push your website to the top of search results. When people in your area search for your services, you will be the first business they see.",
-      color: "text-[#7C3AED]",
-      bg: "bg-[#7C3AED]",
-      glow: "shadow-[0_0_30px_rgba(124,58,237,0.3)]",
-    }
-  ];
-
   return (
     <>
       <Navbar />
-      <main className="flex-1 flex flex-col w-full pt-32 pb-16 md:pt-48 md:pb-24">
+      <main className="pt-32 pb-24 container-custom max-w-5xl">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-center mb-20 text-white tracking-tight">How We Get you more Customers</h1>
         
-        <div className="container-custom max-w-4xl mx-auto text-center mb-16 md:mb-24">
-          <h1 className="text-4xl md:text-6xl font-bold font-heading mb-6 animate-fade-in-up">
-            How We Grow <br/> Your Business.
-          </h1>
-          <p className="text-[#A1A1AA] text-lg md:text-xl animate-fade-in-up animate-delay-100">
-            A simple, aggressive, three-step process to dominate your local market.
-          </p>
-        </div>
-
-        <div className="container-custom max-w-3xl mx-auto relative">
+        <div className="space-y-12">
           
-          {/* Dynamic Vertical Connecting Line (Visible mainly on Desktop/Tablet, adjusted for mobile) */}
-          <div className="absolute left-8 md:left-[3.25rem] top-10 bottom-10 w-0.5 bg-gradient-to-b from-[#F97316] via-[#82E838] to-[#7C3AED] opacity-30 hidden sm:block"></div>
-
-          <div className="space-y-12 md:space-y-24">
-            {steps.map((step, index) => (
-              <div key={index} className="relative flex flex-col sm:flex-row gap-6 md:gap-10 animate-fade-in-up" style={{ animationDelay: `${(index + 1) * 150}ms` }}>
-                
-                {/* Step Number Circle */}
-                <div className="flex-shrink-0 z-10 flex items-center justify-start sm:justify-center">
-                  <div className={`w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center font-heading font-bold text-2xl md:text-3xl text-black ${step.bg} ${step.glow}`}>
-                    {step.num}
-                  </div>
-                </div>
-
-                {/* Step Content */}
-                <div className="glass-card p-6 md:p-10 flex-1 relative overflow-hidden group">
-                  <div className={`absolute top-0 left-0 w-1 h-full ${step.bg}`}></div>
-                  <h2 className={`text-2xl md:text-3xl font-bold mb-4 ${step.color}`}>
-                    {step.title}
-                  </h2>
-                  <p className="text-[#A1A1AA] text-base md:text-lg leading-relaxed">
-                    {step.desc}
-                  </p>
-                </div>
-
-              </div>
-            ))}
+          {/* Step 01: Purple Styling Restored */}
+          <div className="group relative overflow-hidden flex flex-col md:flex-row gap-8 md:gap-12 items-start glass-card p-8 md:p-14 rounded-3xl border border-white/10 hover:border-[#E879F9]/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(232,121,249,0.1)]">
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#E879F9]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="text-7xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white/10 to-transparent group-hover:from-white/30 transition-all duration-500 md:w-1/4 shrink-0">
+              01
+            </div>
+            <div className="md:w-3/4 relative z-10 pt-2 md:pt-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-5 text-white group-hover:text-[#E879F9] transition-colors duration-300">Free Proffesional Photography</h2>
+              <p className="text-lg md:text-xl text-[#A1A1AA] leading-relaxed font-medium">
+                Before we build anything, we visit your business and take professional photos — your team, your office, your products. Real photos build trust faster than words ever can.
+              </p>
+            </div>
           </div>
+
+          {/* Step 02: Green Styling Restored */}
+          <div className="group relative overflow-hidden flex flex-col md:flex-row gap-8 md:gap-12 items-start glass-card p-8 md:p-14 rounded-3xl border border-white/10 hover:border-[#82E838]/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(130,232,56,0.1)]">
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#82E838]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="text-7xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white/10 to-transparent group-hover:from-white/30 transition-all duration-500 md:w-1/4 shrink-0">
+              02
+            </div>
+            <div className="md:w-3/4 relative z-10 pt-2 md:pt-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-5 text-white group-hover:text-[#82E838] transition-colors duration-300">Making Your Website</h2>
+              <p className="text-lg md:text-xl text-[#A1A1AA] leading-relaxed font-medium">
+                We build you a aesthetic and Mobile-first website — made specifically for your ideal customer . Every part of it is designed to turn visitors into paying customers.
+              </p>
+            </div>
+          </div>
+
+          {/* Step 03: Orange Styling Restored */}
+          <div className="group relative overflow-hidden flex flex-col md:flex-row gap-8 md:gap-12 items-start glass-card p-8 md:p-14 rounded-3xl border border-white/10 hover:border-[#F97316]/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(249,115,22,0.1)]">
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#F97316]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="text-7xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white/10 to-transparent group-hover:from-white/30 transition-all duration-500 md:w-1/4 shrink-0">
+              03
+            </div>
+            <div className="md:w-3/4 relative z-10 pt-2 md:pt-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-5 text-white group-hover:text-[#F97316] transition-colors duration-300">Ranking & Getting Customers</h2>
+              <p className="text-lg md:text-xl text-[#A1A1AA] leading-relaxed font-medium">
+                We work on your Google presence so that when someone nearby searches for your service, your business is the first one they see — and the first one they call.
+              </p>
+            </div>
+          </div>
+
         </div>
       </main>
       <Footer />
